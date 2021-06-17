@@ -1,0 +1,236 @@
+<html> 
+	<head> 
+		<title> Pencil Jar </title>
+		<style>
+			*{
+				box-sizing: border-box;
+			}
+
+			.box{
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				width: 275px;
+				height: 400px;
+			}
+			.jarBottom{
+				width: 50%;
+				height: 1%;
+				background: #a1e0da;
+				position: absolute;
+				bottom: 0%;
+				left: 25%;
+				opacity: 0.75;
+			}
+			.jarWalls{
+				height: 60%;
+				width: 80%;
+				background:#a1e0da; /* rgb(161, 224, 218) */
+				position: absolute;
+				bottom: 0.5%;
+				left: 10%;
+				opacity: 0.5;
+				border-radius: 3rem;
+				z-index: 3;
+			}
+			.jarTop{
+				width: 50%;
+				height: 5%;
+				background: #a1e0da;
+				position: absolute;
+				bottom: 60%;
+				left: 25%;
+				opacity: 0.75;
+				z-index: 3;
+			}
+			.jarLong{
+				width: 3%;
+				height: 20%;
+				border-radius: 1rem;
+				background: #ddfbff;
+				position: absolute;
+				bottom: 20%;
+				left: 5%;
+			}
+			.jarShort{
+				width: 3%;
+				height: 5%;
+				border-radius: 1rem;
+				background: #ddfbff; /* rgb(221, 251, 255) */
+				position: absolute;
+				bottom: 45%;
+				left: 5%;
+			}
+			.pencil{
+				width: 10%;
+				height: 80%;
+				background: #fc9e46;
+				position: absolute;
+				bottom: 7%;
+				left: 32%;
+				border-left: solid 0.1em #bc8742;
+				border-right: solid 0.1em #bc8742;�
+				z-index: 2;
+				transform: rotate(-10deg);
+			}
+			.pencilEnd{
+				clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+				width: 110%;
+				height: 13%;
+				background: #f2ec9b;
+				position: absolute;
+				top: -13%;
+				left: -5%;
+			}
+			.pencilLead{
+				width: 100%;
+				height: 30%;
+				background: #000;
+				position: absolute;
+				top: 0%;
+			}
+			.pencilInner{
+				width: 33%;
+				height: 100%;
+				background: #bc8742;
+				position: absolute;
+				bottom: 0%;
+				left: 33%;
+			}
+			.pencilMetal{
+				width: 125%;
+				height: 3%;
+				background: #8e939e;
+				position: absolute;
+				bottom: -3%;
+				left: -12%;
+			}
+			.pencilRubber{
+				width: 100%;
+				height: 5%;
+				background: #e5758f;
+				position: absolute;
+				bottom: -8%;
+			}
+			.scissors{
+  				width: 70%;
+				height: 80%;
+ 				position: absolute;
+  				left: 23%;
+  				bottom: 16%;
+  				z-index: 1;
+  				transform: rotate(10deg);
+			}
+
+
+			.scissorsBlades{
+  				height: 50%;
+  				width: 20%;
+  				background: #adb0b2;
+  				border-radius: 0 0  10rem 10rem / 50rem;
+  				position: absolute;
+ 				bottom: 0;
+  				left: 40%;
+  				z-index: 2;
+  				overflow: hidden;
+			}
+
+			.scissorsBlade2{
+  				height: 100%;
+				 width: 50%;
+  				background: #848687;
+  				position: absolute;
+				transform: rotate(-6deg);
+  				left: -22%;
+			}
+
+			.scissorsLeft{
+				width: 19%;
+ 				height: 25%;
+ 				background: #adb0b2;
+				position: absolute;
+				transform: rotate(-20deg);
+  				bottom: 47%;
+ 				left: 34%;
+				z-index: 2;
+			}
+
+			.scissorsRight{
+  				width: 19%;
+  				height: 25%;
+  				background: #848687;
+  				position: absolute;
+  				transform: rotate(20deg);
+  				bottom: 47%;
+  				right: 34%;
+  				z-index: 1;
+			}
+
+			.holderLeft{
+  				position: absolute;
+  				height: 35%;
+  				width: 40%;
+ 				border: solid 1.5rem #bc1414;
+ 				border-radius: 3rem;
+ 				z-index: 3;
+ 				left: 9.5%
+			}
+
+			.holderRight{
+  				position: absolute;
+				height: 35%;
+  				width: 40%;
+  				border: solid 1.5rem #bc1414;
+  				border-radius: 3rem;
+ 				z-index: 3;
+ 				right: 9.5%
+			}
+
+			.pin{
+  				width: 5%;
+  				height: 3%;
+  				border-radius: 50%;
+  				background: #848687;
+  				position: absolute;
+  				left: 47.5%;
+  				bottom: 49%;
+  				z-index: 3;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="box"> 
+			<div class="jar"> 
+				<div class="jarBottom"></div>
+				<div class="jarWalls">
+					<div class="jarLong"></div>
+					<div class="jarShort"></div>
+				</div>
+				<div class="jarTop"></div>
+			</div>
+			<div class="pencil"> 
+				<div class="pencilEnd"> 
+					<div class="pencilLead"> </div>
+				</div>
+				<div class="pencilInner"> </div>
+				<div class="pencilMetal"> </div>
+				<div class="pencilRubber"> </div>
+			</div>
+			<div class="scissors"> 
+				<div class="scissorsBlades">
+      					<div class="scissorsBlade2"></div>
+    				</div>
+    				<div class="scissorsLeft"></div>
+    				<div class="scissorsRight"></div>
+    				<div class="holderLeft"></div>
+				<div class="holderRight"></div>
+    				<div class="pin"></div>
+			</div>
+		</div>
+	</body>
+</html>
